@@ -18,7 +18,7 @@ const login = ref();
       <div class="flex justify-between w-[50%]">
         <NuxtLink
           to="/Hire"
-          class="mx-4 text-lg font-semibold"
+          class="mx-4 text-lg font-semibold underline-offset-8   decoration-[#2E5F53] hover:underline "
           :class="{
             'underline-offset-8 underline  decoration-[#2E5F53]':
               $route.path === '/Hire',
@@ -27,7 +27,7 @@ const login = ref();
         </NuxtLink>
         <NuxtLink
           to="/About"
-          class="mx-4 text-lg font-semibold"
+          class="mx-4 text-lg font-semibold underline-offset-8   decoration-[#2E5F53] hover:underline "
           :class="{
             'underline-offset-8 underline  decoration-[#2E5F53]':
               $route.path === '/About',
@@ -36,7 +36,7 @@ const login = ref();
         </NuxtLink>
         <NuxtLink
           to="/Roadmap"
-          class="mx-4 text-lg font-semibold"
+          class="mx-4 text-lg font-semibold underline-offset-8   decoration-[#2E5F53] hover:underline "
           :class="{
             'underline-offset-8 underline  decoration-[#2E5F53]':
               $route.path === '/Roadmap',
@@ -45,7 +45,7 @@ const login = ref();
         </NuxtLink>
         <NuxtLink
           to="/Contact"
-          class="mx-4 text-lg font-semibold"
+          class="mx-4 text-lg font-semibold underline-offset-8   decoration-[#2E5F53] hover:underline "
           :class="{
             'underline-offset-8 underline  decoration-[#2E5F53]':
               $route.path === '/Contact',

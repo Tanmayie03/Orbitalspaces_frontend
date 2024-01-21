@@ -2,3 +2,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+@layer utilities{
+    .paused {
+        animation-play-state: paused;
+      }
+    @vartients responsive{
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    }
+ }
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FF6246;
+  border-radius: 5px;
+}
+.toast {
+    position: absolute;
+    left: 8px;
+    top: 72px;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #23ab27;
+    color: white;
+    animation: slideIn 1s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(50%);
+    }
+  }

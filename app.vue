@@ -1,5 +1,5 @@
 <template>
-  <div class="font-montserrat bg-gray-200">
+  <div class="bg-gray-200 font-montserrat">
     <NuxtLayout />
     <NuxtPage/>
     <Footer />

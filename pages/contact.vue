@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class=" bg-white my-4  px-12 py-7">
+        <div class=" bg-white my-4 h-[616px]  px-12 py-7">
 
             <form
           class="bg-[#2e5f532e] flex flex-col w-fit h-fit mx-auto items-center   py-[37px] px-8 rounded-md">

@@ -1,14 +1,26 @@
 <script setup>
-import { onAuthStateChanged } from "firebase/auth"
+import { onAuthStateChanged, signOut } from "firebase/auth"
 import { auth } from "../firebase/config"
 const login = ref(false);
+const user = ref('')
 onAuthStateChanged(auth, currentUser => {
     if (currentUser) {
+        console.log(currentUser)
+        user.value = currentUser
         login.value = true
     } else {
         login.value = false
     }
 })
+const logout = async () => {
+    try {
+        console.log(login.value)
+        await signOut(auth)
+        // login.value = false
+    } catch (error) {
+        console.log(error.message)
+    }
+}
 </script>
 <template>
     <div>
@@ -48,7 +60,7 @@ onAuthStateChanged(auth, currentUser => {
                 </NuxtLink>
             </div>
             <div>
-                <div v-if="(login = false)">
+                <div v-if="(login == false)">
                     <NuxtLink to="/signUp">
                         <p class="bg-[#2E5F53] text-lg text-white px-8 py-2 rounded-lg outline-none">
                             Get Started
